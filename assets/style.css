@@ -51,11 +51,36 @@ section h2 {
 
 .content h2{
     position: relative;
-    left: 20px;
+    left:;
 }
 
 section:hover .asidetitle{
         border-right: 5px solid #bb8588;
+}
+
+.row {
+    display: flex;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.side {
+    max-width: 20%;
+    float: left;
+    text-align: right;
+    padding-right: 15px;
+    flex: 1;
+}
+
+.content {
+    width: 75%;
+    float: left;
+    padding-left: 15px;
+    border-left: #bb8588 solid 5px;
+    padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
