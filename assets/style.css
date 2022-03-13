@@ -75,14 +75,25 @@ section h2 {
     padding-left: 10px;
 }
 
+.content:hover h3 {
+    left: 25px;
+}
+
 .side:hover + .content{
     border-left: 10px solid var(--color2);
     padding-left: 10px;
 }
 
+.side:hover + .content h3 {
+    left: 25px;
+}
+
+
+
 .row {
     display: flex;
 }
+
 .row:after {
     content: "";
     display: table;
@@ -98,15 +109,36 @@ section h2 {
 }
 
 .content {
+    position: relative;
     width: 75%;
     float: left;
     padding-left: 15px;
     border-left: var(--color2) solid 5px;
     padding-bottom: 1em;
+    display: flex;
+}
+
+.content img:first-of-type {
+    position:relative;
+    border: var(--color3) 5px solid;
+    max-width:100%;
+}
+
+.content h3 {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 30px;
+    color: var(--color3);
+    font-size: 17px;
 }
 
 @media screen and (max-width: 768px) {
     nav {
       background-color: #bb8588;
+    }
+
+    .side {
+        float: inline-start;
     }
   }
