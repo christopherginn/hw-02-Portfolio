@@ -1,16 +1,37 @@
+:root {
+    --color1: bisque;
+    --color2: #bb8588;
+    --color3: #fff;
+}
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     position: relative;
+    background-color: var(--color1);
 }
 
+h1 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(45deg, var(--color1), var(--color2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 header {
-    position: ;
     width:100%;
     height: 100%;
     padding: 15px;
+}
+
+nav {
+    margin-bottom: 20px;
+    width: 100%;
+    /* background-color: var(--color2); */
+    padding: 10px;
+    background: linear-gradient(45deg, var(--color1) 0 10%, var(--color2) 100% 10%);
 }
 
 nav ul{
@@ -21,20 +42,26 @@ nav ul{
 nav ul li{
     display: inline;
     text-align: right;
-    padding-right: 15px;
+   /* padding-right: 15px; */
+}
+
+nav a {
+    padding: 7px;
+    color: var(--color3);
+}
+
+nav a:hover {
+    background: #395870;
+    background: linear-gradient(var(--color1), var(--color2));
+    color: var(--color3);
+    padding: 7px;
+    text-decoration: none;
+    margin: 0px;
 }
 
 main {
     position: relative;
-    top: px;
     margin-left: 30px;
-}
-
-section td{
-    padding: 20px;
-    /*border-right: 5px solid;*/
-    vertical-align: top;
-    margin: 10px;
 }
 
 section h2 {
@@ -43,19 +70,14 @@ section h2 {
     height: fit-content;
 }
 
-.asidetitle {
-    border-right: 5px solid;
-    width: 50px;
-    text-align: right;
+.content:hover {
+    border-left: 10px solid var(--color2);
+    padding-left: 10px;
 }
 
-.content h2{
-    position: relative;
-    left:;
-}
-
-section:hover .asidetitle{
-        border-right: 5px solid #bb8588;
+.side:hover + .content{
+    border-left: 10px solid var(--color2);
+    padding-left: 10px;
 }
 
 .row {
@@ -79,7 +101,7 @@ section:hover .asidetitle{
     width: 75%;
     float: left;
     padding-left: 15px;
-    border-left: #bb8588 solid 5px;
+    border-left: var(--color2) solid 5px;
     padding-bottom: 1em;
 }
 
