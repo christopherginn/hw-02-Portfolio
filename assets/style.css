@@ -13,17 +13,30 @@ body {
     background-color: var(--color1);
 }
 
-h1 {
+header h1 {
+    position: relative;
+    display: inline-flex;
     font-size: 50px;
     background: -webkit-linear-gradient(45deg, var(--color1), var(--color2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    float:right;
+    margin-top: 150px;
+    margin-right: 15px;
   }
 
 header {
+    position: relative;
     width:100%;
     height: 100%;
     padding: 15px;
+    margin-bottom: 200px;
+}
+
+header img {
+    float: right;
+    width: 300px;
+    border: var(--color3) 5px solid;
 }
 
 nav {
