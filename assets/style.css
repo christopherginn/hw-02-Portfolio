@@ -120,12 +120,15 @@ main {
     padding-bottom: 1em;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
+    flex-wrap: wrap;    
 }
 
 .content a {
     text-decoration: none;
+}
+
+label {
+    margin-bottom: 5px;
 }
 
 /* Work section of page */
@@ -163,6 +166,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom: var(--color2) 5px solid;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .workimage {
@@ -219,14 +226,37 @@ main {
     transition: 1s;
 }
 
+/* Footer */
+
 footer {
     position: relative;
     bottom: 0px;
     margin-top: 20px;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     background: linear-gradient(180deg, var(--color1) 0 10%, var(--color2) 100% 10%);
     background-color: var(--color1);
+    text-align: center;
 }
+
+footer p {
+    display: inline;
+}
+
+footer ul {
+    display: inline;
+}
+
+footer ul li {
+    display: inline;
+    margin: 5px;
+}
+
+footer a {
+    color: var(--color3);
+}
+
+/* responsive styling */
 
 @media screen and (max-width: 1389px) {
     .workimage {
