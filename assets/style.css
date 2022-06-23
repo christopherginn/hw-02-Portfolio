@@ -160,6 +160,7 @@ label {
     left: 40px;
     color: var(--color3);
     font-size: 25px;
+    text-shadow: 2px 2px var(--color2);
 }
 
 .afterfirst {
@@ -289,7 +290,19 @@ footer a {
     }
 
     .firstworking h3 {
-        font-size: 17px;
+        font-size: 30px;
+        left: 57px;
+    }
+
+    .firstworking img {
+        width: 322px;
+        height: 171px;
+        object-fit: none;
+        margin-left: 5px;
+    }
+
+    .side h2 {
+        font-size: 120%;
     }
 }
 
@@ -298,7 +311,7 @@ footer a {
     .workimage {
         max-width: 100%;
     }
-
+/* 
     header h1 {
         position: absolute;
         z-index: 1;
@@ -308,7 +321,7 @@ footer a {
         left: 90px;
         margin-top: 10px;
         margin-right: 15px;
-    }
+    } */
 
     header img {
         float: center;
@@ -325,6 +338,6 @@ footer a {
     }
 
     .side h2 {
-        font-size: 20%;
+        font-size: 200%;
     }
 }
