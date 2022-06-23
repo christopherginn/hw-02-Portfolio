@@ -180,6 +180,10 @@ label {
     position: relative;
 }
 
+.workimage:hover, .firstworking img:hover {
+    border: var(--color2) 5px solid;
+}
+
 .workimage img {
     max-width: 100%;
 }
