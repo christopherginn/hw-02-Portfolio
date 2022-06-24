@@ -310,7 +310,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
 
     .workimage {
         max-width: 100%;
@@ -342,6 +342,6 @@ footer a {
     }
 
     .side h2 {
-        font-size: 200%;
+        font-size: 100%;
     }
 }
