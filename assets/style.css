@@ -166,7 +166,7 @@ label {
 .afterfirst {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: var(--color2) 5px solid;
     border-radius: 5px;
     padding-bottom: 10px;
@@ -174,7 +174,7 @@ label {
 }
 
 .workimage {
-    max-width: 24%;
+    max-width: 48%;
     border: var(--color3) 5px solid;
     margin: 5px;
     position: relative;
